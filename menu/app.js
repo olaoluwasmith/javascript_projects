@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Menu display function
-displayMenuItems = (menuItems) => {
+const displayMenuItems = (menuItems) => {
     let displayMenu = menuItems.map(function (item) {
         return `<article class="menu-item">
                 <img src=${item.img} alt=${item.title} class="photo" />
@@ -111,7 +111,7 @@ displayMenuItems = (menuItems) => {
     sectionCenter.innerHTML = displayMenu;
 };
 
-displayMenuButtons = () => {
+const displayMenuButtons = () => {
     const categories = menu.reduce(function (values, item) {
         if (!values.includes(item.category)) {
             values.push(item.category);

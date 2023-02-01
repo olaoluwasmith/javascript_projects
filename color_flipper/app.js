@@ -9,6 +9,6 @@ btn.addEventListener('click', function() {// Onclick event with an anonymous fun
 }) 
 
 // Generating a random number
-getRandomNumber = () => {
+const getRandomNumber = () => {
     return Math.floor(Math.random() * colors.length);
 }
